@@ -1,12 +1,20 @@
-
-
-body {
-  background-color: lightblue;
+html {
+  background-image: linear-gradient(to bottom right, #ff61c6ff, #f4ff61ff, #ff9900ff);
 }
 
 h1 {
-  color: navy;
+  color: #5cecffff;
   margin-left: 20px;
+  font-family: "Windows 95", "Times New Roman", Calibri;
+}
+
+@font-face {
+  font-family: "Windows 95";
+  src: url('../fonts/W95FA/W95FA.otf');
+  src: url('../fonts/W95FA/w95fa.woff') format('woff'),
+  url('../fonts/W95FA/w95fa.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Stealing stuff for the thing mentioned in Index, from online tutorial
@@ -21,6 +29,8 @@ I'd have to manage whatever was even deeper in, like nav ul ul ul ul or somethin
 
 /* Interested in messing with the colors and borders a bunch, these defaults are fine but kinda ugly.
 Gotta figure out exactly what "moz linear gradient" and "webkit linear gradient" mean*/
+
+/* Gonna try to restyle this to look like a retro/vaporwave aesthetic*/
 
 nav ul ul {
   display: none;
