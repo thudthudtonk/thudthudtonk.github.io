@@ -1,0 +1,16 @@
+table, tr, th {
+    border: 1px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: orange;
+}
