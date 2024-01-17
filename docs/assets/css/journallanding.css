@@ -1,0 +1,34 @@
+html {
+    background-image: linear-gradient(to bottom right, #ff61c6ff, #f4ff61ff, #ff9900ff);
+}
+
+h1 {
+    color: #5cecffff;
+}
+
+a:link {
+    color: pink;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width:100%;
+    height:auto;
+}
+
+.journal-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+}
