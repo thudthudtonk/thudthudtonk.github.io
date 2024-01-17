@@ -1,3 +1,18 @@
+:root {
+  /*Neon vaporwave color palette*/
+  --vaporwaveneon-pink: #ff007f;
+  --vaporwaveneon-magenta: #e100ff;
+  --vaporwaveneon-blue: #00e6e6;
+  --vaporwaveneon-teal: #00ffcc;
+  --vaporwaveneon-purple: #aa00ff;
+  --vaporwaveneon-violet: #e600ff;
+  --vaporwaveneon-turquoise: #00ffcc;
+  --vaporwaveneon-aqua: #00ffe6;
+  --vaporwaveneon-green: #00ff80;
+  --vaporwaveneon-orange: #ff8000;
+}
+
+
 html {
   background-image: linear-gradient(to bottom right, #ff61c6ff, #f4ff61ff, #ff9900ff);
 }
@@ -95,4 +110,50 @@ nav ul ul {
 
 nav ul ul ul {
   position: absolute; left: 100%; top: 0;
+}
+/*
+  @keyframes rainbowText {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+
+  .rainbow-text {
+    font-family: 'Windows 95', 'Arial', sans-serif;
+    font-size: 2em;
+    background: linear-gradient(45deg, var(--vaporwaveneon-pink), var(vaporwaveneon-orange), var(--vaporwaveneon-blue), var(--vaporwaveneon-green));
+    background-size: 200% 100%;
+    color: #fff;
+    background-clip: text;
+    animation: rainbowText 5s linear infinite;
+}
+*/
+
+/* Attempt 2 at animation */
+
+@keyframes rainbowText {
+  0% {
+    color: var(--vaporwaveneon-pink);
+  }
+  25% {
+    color: var(--vaporwaveneon-orange);
+  }
+  50% {
+    color: var(--vaporwaveneon-blue);
+  }
+  75% {
+    color: var(--vaporwaveneon-green);
+  }
+  100% {
+    color: var(--vaporwaveneon-pink);
+  }
+}
+
+.rainbow-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 2em;
+  animation: rainbowText 5s linear infinite;
 }

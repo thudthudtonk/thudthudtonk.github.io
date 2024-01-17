@@ -1,0 +1,76 @@
+:root {
+
+    /*Pastel vaporwave color palette*/
+    --vaporwave-pink: #ff6ec7;
+    --vaporwave-magenta: #b81aff;
+    --vaporwave-blue: #00ccff;
+    --vaporwave-teal: #4ae8e0;
+    --vaporwave-purple: #aa80ff;
+    --vaporwave-violet: #e066ff;
+    --vaporwave-turquoise: #00ffcc;
+    --vaporwave-aqua: #4df2ff;
+    --vaporwave-green: #80ffaa;
+    --vaporwave-orange: #ffaa80;
+
+    /*Neon vaporwave color palette*/
+    --vaporwaveneon-pink: #ff007f;
+    --vaporwaveneon-magenta: #e100ff;
+    --vaporwaveneon-blue: #00e6e6;
+    --vaporwaveneon-teal: #00ffcc;
+    --vaporwaveneon-purple: #aa00ff;
+    --vaporwaveneon-violet: #e600ff;
+    --vaporwaveneon-turquoise: #00ffcc;
+    --vaporwaveneon-aqua: #00ffe6;
+    --vaporwaveneon-green: #00ff80;
+    --vaporwaveneon-orange: #ff8000;
+}
+
+/*Employing a goofy amount of colors for a vaporwave pastel header*/
+h1 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    background: linear-gradient(45deg, var(--vaporwave-pink), var(--vaporwave-magenta), var(--vaporwave-blue), var(--vaporwave-teal), var(--vaporwave-purple), var(--vaporwave-violet), var(--vaporwave-turquoise), var(--vaporwave-aqua), var(--vaporwave-green), var(--vaporwave-orange));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    border: 2px solid var(--vaporwave-blue);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+    background: linear-gradient(to right, var(--vaporwaveneon-blue), var(--vaporwaveneon-purple));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.6), 0 0 30px rgba(255,255,255,0.4);
+
+}
+
+@keyframes waveGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, var(--vaporwaveneon-pink), var(--vaporwaveneon-orange), var(--vaporwaveneon-blue), var(--vaporwaveneon-green));
+    background-size: 100% 500%;
+    animation: waveGradient 10s infinite alternate;
+}
