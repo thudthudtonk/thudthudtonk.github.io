@@ -3,11 +3,23 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="docs/assets/css/index.css">
-  
+  <link rel="stylesheet" href="docs/assets/css/lightmode.css" id="theme-light">
+  <link rel="stylesheet" href="docs/assets/css/darkmode.css" id="theme-dark" disabled>
 </head>
 <body>
 
-<nav>
+<script src="docs/assets/js/toggleMenu.js"></script>
+<script src="docs/assets/js/toggleMode.js"></script>
+
+<button id="toggleButton" onclick="toggleMenu()">
+  <img src="docs/assets/images/houseicon.png" style="width: 20px; height: 20px;">
+</button>
+
+<button id="lightMode" onclick="toggleMode()">
+  <img id="modeImage" src="docs/assets/images/darkmodeicon.png" style="width: 20px; height:20px;">
+</button>
+
+<nav id="menu" class="hidden">
   <ul>
     <li><a href="docs/assets/pages/orbs.html">Orb Collection</a></li>
     <li><a href="docs/assets/pages/buttongame.html">Button Game</a></li>
@@ -25,11 +37,32 @@
 <br>
 
 <div class="section" id="section1">
-  <h1>Test1</h1>
+  <image src="docs/assets/images/headshot.jpg" class="centered" id="headshot"></image>
+  <h1>About Me</h1>
+  <div id="aboutMe">
+    <p class="wrapThis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta, libero luctus rutrum convallis, ipsum tellus gravida urna, sed lobortis
+      leo nisi porta nunc. Donec mauris ligula, consectetur sit amet feugiat vitae, ultricies id mauris. Maecenas rutrum consequat neque at
+      vehicula. Curabitur ante lorem, sagittis nec mauris eget, porttitor condimentum purus. Maecenas magna neque, lobortis sed eros vitae,
+      mollis fermentum lectus. Praesent ac nisi bibendum, volutpat leo vel, fringilla massa. Duis massa libero, dictum sit amet erat nec, sodales
+      bibendum quam. Pellentesque tincidunt nunc arcu, eu tempor ex imperdiet id. Phasellus quis ligula risus. Duis tincidunt magna quis nibh
+      congue tempor. Vivamus dui purus, mattis non ante sit amet, consectetur tincidunt tellus. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Nullam lacinia condimentum ultricies. Maecenas nec posuere metus. Quisque vel dui ipsum.
+    </p>
+  </div>
 </div>
 
 <div class="section" id="section2">
-  <h1>Test2</h1>
+  <h1>About This Page</h1>
+  <div id="aboutPage">
+    <p class="wrapThis">Vivamus molestie ligula elit, vitae mattis libero cursus id. In eleifend luctus nisl non consequat. Aenean sem
+      enim, eleifend eu lectus vel, fermentum sagittis diam. Fusce nec turpis lorem. Aliquam ultricies augue vitae
+      tellus scelerisque, id ornare nisi ultricies. Phasellus mattis rhoncus ex eu maximus. Morbi quis mollis libero.
+      Nullam at est varius, venenatis sem vitae, malesuada odio. Sed at commodo arcu. Vestibulum sollicitudin,
+      ipsum ut semper ultrices, tellus elit ornare purus, id gravida tellus arcu id nulla. Sed non vestibulum nisl.
+      Vivamus tristique enim posuere elit elementum laoreet. Suspendisse quis pretium ligula. Sed vitae
+      pellentesque lectus.
+    </p>
+  </div>
 </div>
 
 <div class="section" id="section3">
