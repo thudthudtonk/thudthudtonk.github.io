@@ -21,7 +21,26 @@ h1 {
   /* color: rgb(0, 40, 46); */
   text-align: center;
   font-family: "Times New Roman", Calibri;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: var(--vaporwaveneon-aqua);
+  display: inline-block;
+
 }
+
+.titlebar {
+  background-color: #3498db;
+  color: white;
+  position: fixed;
+  top: 0;
+  padding: 5px;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*.content {
+  margin-top:20px;
+}*/
 
 .wrapThis {
   max-width: 100%;
@@ -41,7 +60,7 @@ h1 {
 
 button#toggleButton {
   position: fixed;
-  top: 10px;
+  top: 50px;
   left: 10px;
   padding: 10px;
   cursor: pointer;
@@ -58,7 +77,7 @@ button#toggleButton:hover {
 
 button#lightMode {
   position: fixed;
-  top: 50px;
+  top: 90px;
   left: 10px;
   padding: 10px;
   cursor: pointer;
@@ -79,6 +98,10 @@ button#lightMode:hover {
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: var(--vaporwaveneon-aqua);
 }
 
 body, html {
@@ -91,6 +114,7 @@ body, html {
 .section {
   height: 100vh;
   scroll-snap-align: start;
+  text-align: center;
 }
 
 /* testing for styles of sections */
