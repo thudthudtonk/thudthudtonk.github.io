@@ -13,14 +13,39 @@
 }
 
 
-html {
+/* html {
   background-image: linear-gradient(to bottom right, #ff61c6ff, #f4ff61ff, #ff9900ff);
-}
+} */
 
 h1 {
   color: #5cecffff;
   margin-left: 20px;
   font-family: "Windows 95", "Times New Roman", Calibri;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* testing for styles of sections */
+
+#section1 {
+  background-color: var(--vaporwaveneon-aqua);
+}
+
+#section2 {
+  background-color: var(--vaporwaveneon-magenta);
+}
+
+#section3 {
+  background-color: var(--vaporwaveneon-orange);
 }
 
 @font-face {
@@ -62,9 +87,12 @@ nav ul {
   background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
   box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
   padding: 0 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; Not a fan of the rounded corners right now*/ 
   list-style: none;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: inline-table;
 }
   nav ul:after {
